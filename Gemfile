@@ -17,6 +17,8 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
+gem "tailwindcss-ruby", "~> 4.0"
+gem "tailwindcss-rails", "~> 4.2"
 
 gem "colorize"
 gem "dotenv-rails"
