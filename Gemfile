@@ -17,18 +17,17 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
+
+gem "dotenv-rails"
 gem "tailwindcss-ruby", "~> 4.0"
 gem "tailwindcss-rails", "~> 4.2"
-
-gem "colorize"
-gem "dotenv-rails"
+gem "cpf_cnpj" 
 
 group :development, :test do
+  gem "simplecov", require: false
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
-  gem "simplecov", require: false
-  gem "faker", require: false
 end
 
 group :development do
@@ -39,3 +38,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
